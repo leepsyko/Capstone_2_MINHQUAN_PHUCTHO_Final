@@ -1,0 +1,16 @@
+// Helpers
+@import "./Helpers/variablesIF";
+@import "./Helpers/mixinIF";
+
+//Base
+@import "./Base/resetIF";
+
+// Components
+@import "./Components/buttonIF";
+
+// Layouts
+@import "./Layouts/headerIF";
+@import "./Layouts/canvas";
+@import "./Layouts/bannerIF";
+@import "./Layouts/productsIF";
+@import "./Layouts/modalIF";

@@ -1,0 +1,34 @@
+header {
+  background-color: $color-dark-1;
+  .navbar-brand {
+    @include styleText($color-white-1, $fs-7, $fw-600);
+
+    &:hover {
+      color: $color-white-1;
+    }
+    &:focus {
+      color: $color-white-1;
+    }
+  }
+  #navbarSupportedContent {
+    form {
+      .product-cart {
+        position: relative;
+        .quantity-product {
+          position: absolute;
+          top: -3px;
+          right: -2px;
+          color: $color-white-1;
+          display: inline-block;
+          background-color: red;
+          font-size: $fs-2;
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          text-align: center;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
