@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Capstone_2</title>
     <!-- FontAwesome 6.2.0 CSS -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-      />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- My Scss -->
 
     <!-- <link rel="stylesheet" href="../scss/admin.scss"> -->
@@ -34,14 +23,7 @@
       <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
         <div class="container">
           <a class="navbar-brand" href="#">Admim Of Products</a>
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"></button>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
@@ -51,13 +33,7 @@
                 <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                   <a class="dropdown-item" href="#">Action 1</a>
                   <a class="dropdown-item" href="#">Action 2</a>
@@ -76,15 +52,11 @@
       <!-- Phan tab menu -->
       <ul class="nav nav-tabs container" role="tablist">
         <li class="nav-item">
-          <a
-            class="nav-link active"
-            href="#DanhSachSP"
-            role="tab"
-            data-toggle="tab">Danh sách sản phẩm</a>
+          <a class="nav-link active" href="#DanhSachSP" role="tab" data-toggle="tab">Danh sách sản phẩm</a>
         </li>
 
       </ul>
-      <br />
+      <br>
       <!-- Tab panes -->
       <div class="container">
         <div class="tab-content">
@@ -93,11 +65,7 @@
             <div class="row">
               <div class="col-md-5">
                 <!-- BEGIN BUTTOM THÊM MỚI -->
-                <button
-                  id="btnThemSP"
-                  class="btn btn-success"
-                  data-toggle="modal"
-                  data-target="#myModal">
+                <button id="btnThemSP" class="btn btn-success" data-toggle="modal" data-target="#myModal">
                   <i class="fa fa-plus mr-1"></i>
                   Thêm Mới
                 </button>
@@ -108,7 +76,7 @@
                 <div>
                   <label for="filterByPrice">Lọc sản phẩm</label>
                   <select name="giá" id="filterByPrice">
-                    <option value="" selected>Mặc định</option>
+                    <option value="" selected="">Mặc định</option>
                     <option value="high">Từ cao đến thấp</option>
                     <option value="low">Từ thấp đến cao</option>
                   </select>
@@ -117,12 +85,9 @@
               <div class="col-md-3">
                 <!-- BEGIN TÌM KIẾM -->
                 <div class="input-group mb-3">
-                  <input type="text" id="txtSearch" class="form-control"
-                    placeholder="Nhập từ khóa" aria-label="Recipient's username"
-                    aria-describedby="basic-addon2" />
+                  <input type="text" id="txtSearch" class="form-control" placeholder="Nhập từ khóa" aria-label="Recipient's username" aria-describedby="basic-addon2">
                   <div class="input-group-append">
-                    <span class="input-group-text" id="basic-addon2"><i
-                        class="fa
+                    <span class="input-group-text" id="basic-addon2"><i class="fa
                         fa-search"></i></span>
                   </div>
                 </div>
@@ -146,7 +111,7 @@
               </table>
               <!-- END TABLE SẢN PHẨM -->
             </div>
-            <br />
+            <br>
           </div>
           <!-- Kết thúc danh sách sản phẩm -->
         </div>
@@ -169,71 +134,43 @@
             <div class="modal-body">
               <div class="form-group">
                 <label>Tên Sản Phẩm</label>
-                <input
-                  id="TenSP"
-                  class="form-control"
-                  placeholder="Nhập vào tên sản phẩm"
-                  />
+                <input id="TenSP" class="form-control" placeholder="Nhập vào tên sản phẩm">
                 <span id="spanName" class="text-danger"></span>
               </div>
               <div class="form-group">
                 <label>Giá</label>
-                <input
-                  id="GiaSP"
-                  class="form-control"
-                  placeholder="Nhập vào giá"
-                  />
+                <input id="GiaSP" class="form-control" placeholder="Nhập vào giá">
                 <span id="spanPrice" class="text-danger"></span>
               </div>
               <div class="form-group">
                 <label>Kích thước màn hình</label>
-                <input
-                  id="ManHinhSP"
-                  class="form-control"
-                  placeholder="Nhập vào kích thước màn hình"
-                  />
+                <input id="ManHinhSP" class="form-control" placeholder="Nhập vào kích thước màn hình">
                 <span id="spanScreen" class="text-danger"></span>
               </div>
               <div class="form-group">
                 <label>Camera Trước</label>
-                <input
-                  id="CameraBSP"
-                  class="form-control"
-                  placeholder="Nhập vào thông số camera"
-                  />
+                <input id="CameraBSP" class="form-control" placeholder="Nhập vào thông số camera">
                 <span id="spanBSP" class="text-danger"></span>
               </div>
               <div class="form-group">
                 <label>Camera Sau</label>
-                <input
-                  id="CameraASP"
-                  class="form-control"
-                  placeholder="Nhập vào thông số camera"
-                  />
+                <input id="CameraASP" class="form-control" placeholder="Nhập vào thông số camera">
                 <span id="spanASP" class="text-danger"></span>
               </div>
               <div class="form-group">
                 <label>Hình Ảnh</label>
-                <input
-                  id="HinhSP"
-                  class="form-control"
-                  placeholder="Nhập vào hình sản phẩm"
-                  />
+                <input id="HinhSP" class="form-control" placeholder="Nhập vào hình sản phẩm">
                 <span id="spanHinh" class="text-danger"></span>
               </div>
               <div class="form-group">
                 <label>Thông tin</label>
-                <input
-                  id="ThongtinSP"
-                  class="form-control"
-                  placeholder="Nhập vào thông tin sản phẩm"
-                  />
+                <input id="ThongtinSP" class="form-control" placeholder="Nhập vào thông tin sản phẩm">
                 <span id="spanInfor" class="text-danger"></span>
               </div>
               <div class="form-group">
                 <label for="">Loại sản phẩm: </label>
                 <select class="form-control" id="loaiSP">
-                  <option value="" selected></option>
+                  <option value="" selected=""></option>
                   <option value="iphone">iphone khác</option>
                   <option value="iphone 14">iphone 14</option>
                   <option value="iphone 13">iphone 13</option>
@@ -251,32 +188,23 @@
     </div>
     <!-- <div id="container">asddddddddddddddddd</div> -->
 
-    <style>
-      #container {
-        min-width: 310px;
-        max-width: 800px;
-        height: 400px;
-        margin: 0 auto;
-      }
-    </style>
+    <style>#container {
+  min-width: 310px;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+</style>
     <!--  Link bootstrap  -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
     <!-- Axios
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
     <!-- link JS -->
-    <script type="module" src="./main.js"></script>
+    <script src="/admin.4d6bcbeb.js" defer=""></script>
   </body>
 </html>
